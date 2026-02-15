@@ -1,6 +1,6 @@
-import React from "react";
-import Lottie from "react-lottie";
-import readingBook from "../../../assets/reading-book.json";
+import React from 'react'
+import Lottie from 'react-lottie'
+import readingBook from '../../../assets/reading-book.json'
 
 const Education = () => {
   const defaultOptions = {
@@ -8,9 +8,9 @@ const Education = () => {
     autoplay: true,
     animationData: readingBook,
     rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
+      preserveAspectRatio: 'xMidYMid slice',
     },
-  };
+  }
   return (
     <div className="pt-24">
       <div className="mb-12">
@@ -37,7 +37,9 @@ const Education = () => {
               <p className="text-sm text-neutral font-semibold">2021 - 2025</p>
             </div>
             <p className="text-sm text-neutral text-justify">
-              I am currently studying in Informatics Engineering (4th Semester) at Sekolah Tinggi Teknologi Informatika Sony Sugema, Karawang, Jawa Barat, Indonesia
+              I am currently studying in Informatics Engineering (4th Semester)
+              at Sekolah Tinggi Teknologi Informatika Sony Sugema, Karawang,
+              Jawa Barat, Indonesia
             </p>
           </div>
 
@@ -50,8 +52,8 @@ const Education = () => {
               <p className="text-sm text-neutral font-semibold">2023</p>
             </div>
             <p className="text-sm text-neutral text-justify">
-              I have successfully completed the <b>React Web Developer Expert</b>{" "}
-              from Dicoding.
+              I have successfully completed the{' '}
+              <b>React Web Developer Expert</b> from Dicoding.
             </p>
           </div>
 
@@ -69,7 +71,7 @@ const Education = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Education;
+export default Education

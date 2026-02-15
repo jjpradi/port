@@ -1,5 +1,5 @@
-import React from "react";
-import "./BottomLine.css";
+import React from 'react'
+import './BottomLine.css'
 
 const BottomLine = () => {
   return (
@@ -12,7 +12,7 @@ const BottomLine = () => {
         <div className="side-line"></div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default BottomLine;
+export default BottomLine

@@ -1,19 +1,19 @@
-import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
-import Slider from "react-slick";
-import Items from "../../../Utils/Items";
-import { PrimaryBtn, SecondaryBtn } from "../../../components";
-import { FaLink, FaCode } from "react-icons/fa";
-import { LazyLoadImage } from "react-lazy-load-image-component";
-import placeholderImage from "../../../assets/placeholder.jpg";
+import React, {useEffect, useState} from 'react'
+import {useParams} from 'react-router-dom'
+import Slider from 'react-slick'
+import Items from '../../../Utils/Items'
+import {PrimaryBtn, SecondaryBtn} from '../../../components'
+import {FaLink, FaCode} from 'react-icons/fa'
+import {LazyLoadImage} from 'react-lazy-load-image-component'
+import placeholderImage from '../../../assets/placeholder.jpg'
 
 const ProjectDetails = () => {
-  const { id } = useParams();
-  const [item, setItem] = useState();
+  const {id} = useParams()
+  const [item, setItem] = useState()
   useEffect(() => {
-    const filtered = Items.find((item) => item.id === parseInt(id));
-    setItem(filtered);
-  }, [id]);
+    const filtered = Items.find(item => item.id === parseInt(id))
+    setItem(filtered)
+  }, [id])
 
   const settings = {
     dots: true,
@@ -33,7 +33,7 @@ const ProjectDetails = () => {
         },
       },
     ],
-  };
+  }
   return (
     <div className="parent py-16">
       <h1 className="text-center text-4xl font-medium mt-8">{item?.title}</h1>
@@ -43,7 +43,7 @@ const ProjectDetails = () => {
           <div key={index} className="mt-6">
             <div
               className="mx-1 md:mx-4 rounded-lg shadow-xl single-blog cursor-pointer border-2 border-primary flex flex-col justify-between"
-              style={{ backgroundColor: "#313131" }}
+              style={{backgroundColor: '#313131'}}
             >
               {/* <img
                 src={image}
@@ -60,7 +60,7 @@ const ProjectDetails = () => {
         ))}
       </Slider>
       <p className="text-neutral font-medium mt-10 mb-6">
-        <span className="font-semibold text-white text-xl">Description: </span>{" "}
+        <span className="font-semibold text-white text-xl">Description: </span>{' '}
         {item?.description}
       </p>
       <div className="my-6">
@@ -103,7 +103,7 @@ const ProjectDetails = () => {
         </a>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default ProjectDetails;
+export default ProjectDetails

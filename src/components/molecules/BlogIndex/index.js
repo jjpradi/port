@@ -1,56 +1,56 @@
-import React, { useState, useEffect } from "react";
-import { LazyLoadImage } from "react-lazy-load-image-component";
-import { Link } from "react-router-dom";
-import placeholderImage from "../../../assets/placeholder.jpg";
-import blogs from "../../../Utils/blogs";
-import { FaAngleDoubleRight, FaAngleDoubleLeft } from "react-icons/fa";
-import { BottomLine } from "../../../components";
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+import React, {useState, useEffect} from 'react'
+import {LazyLoadImage} from 'react-lazy-load-image-component'
+import {Link} from 'react-router-dom'
+import placeholderImage from '../../../assets/placeholder.jpg'
+import blogs from '../../../Utils/blogs'
+import {FaAngleDoubleRight, FaAngleDoubleLeft} from 'react-icons/fa'
+import {BottomLine} from '../../../components'
+import {motion, useAnimation} from 'framer-motion'
+import {useInView} from 'react-intersection-observer'
 import {
   headingAnimation,
   sectionBodyAnimation,
-} from "../../../hooks/useAnimation";
+} from '../../../hooks/useAnimation'
 
 const BlogIndex = () => {
-  const [currentPage, setCurrentPage] = useState(1);
-  const [blogsPerPage] = useState(6);
-  const [ref, inView] = useInView();
-  const [viewDiv, setViewDiv] = useState(false);
-  const animation = useAnimation();;
-  const indexOfLastBlog = currentPage * blogsPerPage;
-  const indexOfFirstBlog = indexOfLastBlog - blogsPerPage;
+  const [currentPage, setCurrentPage] = useState(1)
+  const [blogsPerPage] = useState(6)
+  const [ref, inView] = useInView()
+  const [viewDiv, setViewDiv] = useState(false)
+  const animation = useAnimation()
+  const indexOfLastBlog = currentPage * blogsPerPage
+  const indexOfFirstBlog = indexOfLastBlog - blogsPerPage
   const currentBlogs = blogs
     .sort((a, b) => new Date(b.date) - new Date(a.date))
-    .slice(indexOfFirstBlog, indexOfLastBlog);
+    .slice(indexOfFirstBlog, indexOfLastBlog)
 
-  const totalPages = Math.ceil(blogs.length / blogsPerPage);
+  const totalPages = Math.ceil(blogs.length / blogsPerPage)
 
   const handleNextPageClick = () => {
     if (currentPage < totalPages) {
-      setCurrentPage(currentPage + 1);
+      setCurrentPage(currentPage + 1)
     }
-  };
+  }
 
   const handlePreviousPageClick = () => {
     if (currentPage > 1) {
-      setCurrentPage(currentPage - 1);
+      setCurrentPage(currentPage - 1)
     }
-  };
+  }
 
   useEffect(() => {
     if (inView) {
-      setViewDiv(true);
+      setViewDiv(true)
     } else {
-      setViewDiv(false);
+      setViewDiv(false)
     }
-  }, [inView, animation]);
+  }, [inView, animation])
 
   return (
     <div className="parent py-16">
       <motion.div
         initial="hidden"
-        animate={viewDiv && "visible"}
+        animate={viewDiv && 'visible'}
         variants={headingAnimation}
       >
         <h1 className="text-3xl font-semibold text-center">
@@ -63,18 +63,18 @@ const BlogIndex = () => {
           className=" grid grid-cols-1 md:grid-cols-3 gap-8"
           ref={ref}
           initial="hidden"
-          animate={viewDiv && "visible"}
+          animate={viewDiv && 'visible'}
           variants={sectionBodyAnimation}
         >
-          {currentBlogs.map((blog) => {
-            const { _id, title, date, img, description, path } = blog;
+          {currentBlogs.map(blog => {
+            const {_id, title, date, img, description, path} = blog
             return (
               <div
                 key={_id}
                 className="flex flex-col w-full items-center justify-between gap-8 rounded-lg min-h-32"
               >
                 <div className="w-full">
-                  <Link to={"/blog/" + path}>
+                  <Link to={'/blog/' + path}>
                     <LazyLoadImage
                       placeholderSrc={placeholderImage}
                       src={img}
@@ -84,7 +84,7 @@ const BlogIndex = () => {
                 </div>
                 <div className="w-full">
                   <h2 className="text-[22px] font-medium text-white cursor-pointer hover:text-primary mt-[-25px]">
-                    <Link to={"/blog/" + path}>{title}</Link>
+                    <Link to={'/blog/' + path}>{title}</Link>
                   </h2>
                   <span className="text-gray-600 text-sm">
                     <p>{date}</p>
@@ -92,10 +92,9 @@ const BlogIndex = () => {
                   <p className="text-neutral mt-1 mb-6">
                     {description?.slice(0, 80)} ...
                   </p>
-
                 </div>
               </div>
-            );
+            )
           })}
         </motion.div>
       </div>
@@ -119,7 +118,7 @@ const BlogIndex = () => {
         </button>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default BlogIndex;
+export default BlogIndex

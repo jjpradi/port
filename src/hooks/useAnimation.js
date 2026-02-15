@@ -7,9 +7,9 @@ export const headingAnimation = {
   visible: {
     y: 0,
     opacity: 1,
-    transition: { duration: 1, type: "spring" },
+    transition: {duration: 1, type: 'spring'},
   },
-};
+}
 
 // Section Body
 export const sectionBodyAnimation = {
@@ -25,7 +25,7 @@ export const sectionBodyAnimation = {
       delay: 0.75,
     },
   },
-};
+}
 
 export const contactAnimation = {
   hidden: {
@@ -40,4 +40,4 @@ export const contactAnimation = {
       duration: 0.5,
     },
   },
-};
+}

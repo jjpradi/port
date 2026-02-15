@@ -1,75 +1,77 @@
-import React, { useState, useEffect } from "react";
-import { Link, NavLink } from "react-router-dom";
+import React, {useState, useEffect} from 'react'
+import {Link, NavLink} from 'react-router-dom'
 import {
   RiMenu3Fill,
   RiContactsBook2Fill,
   RiFolderInfoFill,
-} from "react-icons/ri";
-import { GiCrossMark } from "react-icons/gi";
-import { FaHome, FaDownload } from "react-icons/fa";
-import { MdWork } from "react-icons/md";
-import { ImBlog } from "react-icons/im";
-import Drawer from "react-modern-drawer";
-import "react-modern-drawer/dist/index.css";
-import "../../../pages/shared/Shared.css";
-import { PrimaryBtn } from "../../../components";
+} from 'react-icons/ri'
+import {GiCrossMark} from 'react-icons/gi'
+import {FaHome, FaDownload} from 'react-icons/fa'
+import {MdWork} from 'react-icons/md'
+import {ImBlog} from 'react-icons/im'
+import Drawer from 'react-modern-drawer'
+import 'react-modern-drawer/dist/index.css'
+import '../../../pages/shared/Shared.css'
+import {PrimaryBtn} from '../../../components'
 
 export default function Navbar() {
-  const [isOpen, setIsOpen] = React.useState(false);
+  const [isOpen, setIsOpen] = React.useState(false)
   const toggleDrawer = () => {
-    setIsOpen((prevState) => !prevState);
-  };
+    setIsOpen(prevState => !prevState)
+  }
 
   const navLinks = [
-    { title: "Home", link: "/", icon: <FaHome /> },
-    { title: "About", link: "/about", icon: <RiFolderInfoFill /> },
-    { title: "Project", link: "/project", icon: <MdWork /> },
-    { title: "Contact", link: "/contact", icon: <RiContactsBook2Fill /> },
-    { title: "Blog", link: "/blog", icon: <ImBlog /> },
-  ];
-  const activeLink = ({ isActive }) => {
+    {title: 'Home', link: '/', icon: <FaHome />},
+    {title: 'About', link: '/about', icon: <RiFolderInfoFill />},
+    {title: 'Project', link: '/project', icon: <MdWork />},
+    {title: 'Contact', link: '/contact', icon: <RiContactsBook2Fill />},
+    {title: 'Blog', link: '/blog', icon: <ImBlog />},
+  ]
+  const activeLink = ({isActive}) => {
     return {
       fontWeight: 500,
-      color: isActive && "#FF651C",
-    };
-  };
+      color: isActive && '#FF651C',
+    }
+  }
 
   // Show Navbar on Scroll UP
-  const [show, setShow] = useState(false);
-  const [lastScrollY, setLastScrollY] = useState(0);
+  const [show, setShow] = useState(false)
+  const [lastScrollY, setLastScrollY] = useState(0)
   useEffect(() => {
     const controlNavbar = () => {
-      if (typeof window !== "undefined") {
+      if (typeof window !== 'undefined') {
         if (window.scrollY > lastScrollY) {
-          setShow(true);
+          setShow(true)
         } else {
-          setShow(false);
+          setShow(false)
         }
-        setLastScrollY(window.scrollY);
+        setLastScrollY(window.scrollY)
       }
-    };
-    if (typeof window !== "undefined") {
-      window.addEventListener("scroll", controlNavbar);
-      return () => {
-        window.removeEventListener("scroll", controlNavbar);
-      };
     }
-  }, [lastScrollY]);
+    if (typeof window !== 'undefined') {
+      window.addEventListener('scroll', controlNavbar)
+      return () => {
+        window.removeEventListener('scroll', controlNavbar)
+      }
+    }
+  }, [lastScrollY])
 
   return (
     <div
-      className={`visible ${show && "nav-hidden"} shadow-lg bg-[#313131] 
+      className={`visible ${show && 'nav-hidden'} shadow-lg bg-[#313131] 
      z-50`}
     >
       <div className="w-full flex items-center justify-between px-3 md:px-24 py-3">
         <div>
           <Link to="/">
-            <h1 className="text-2xl text-primary font-lobster">Gilbert Hutapea</h1>
+            <h1 className="text-2xl text-primary font-lobster">
+              John Pratheep J
+            </h1>
           </Link>
         </div>
         <div>
           <ul className="lg:flex items-center hidden">
-            {navLinks.map((navItem) => (
+            {navLinks.map(navItem => (
               <li className="mx-4" key={navItem.title}>
                 <NavLink
                   to={navItem.link}
@@ -83,7 +85,7 @@ export default function Navbar() {
 
             <a
               className="inline-block ml-4"
-              href="https://drive.google.com/file/d/19rnbukAhf9oPhadMhsvI3xnWF6FIYeMT/view?usp=share_link"
+              href="https://drive.google.com/file/d/1A_QF4nc6LovLcvNP_FHMHG_CRI9tTDLQ/view?usp=drive_link"
               target="blank"
             >
               <PrimaryBtn>
@@ -102,7 +104,7 @@ export default function Navbar() {
               open={isOpen}
               onClose={toggleDrawer}
               direction="right"
-              style={{ backgroundColor: "#212121" }}
+              style={{backgroundColor: '#212121'}}
               className="bla bla bla flex flex-col justify-between pb-4"
             >
               <ul className="">
@@ -112,7 +114,7 @@ export default function Navbar() {
                     onClick={() => setIsOpen(!isOpen)}
                   ></GiCrossMark>
                 </li>
-                {navLinks.map((navItem) => (
+                {navLinks.map(navItem => (
                   <li
                     className="m-4"
                     key={navItem.title}
@@ -153,5 +155,5 @@ export default function Navbar() {
         </div>
       </div>
     </div>
-  );
+  )
 }

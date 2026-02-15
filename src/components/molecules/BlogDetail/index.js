@@ -1,12 +1,12 @@
-import React from "react";
-import { useParams } from "react-router-dom";
-import placeholderImage from "../../../assets/placeholder.jpg";
-import blogs from "../../../Utils/blogs";
-import { useState } from "react";
-import { useEffect } from "react";
-import { LazyLoadImage } from "react-lazy-load-image-component";
-import { FiExternalLink } from "react-icons/fi";
-import { SiLinkedin, SiInstagram } from "react-icons/si";
+import React from 'react'
+import {useParams} from 'react-router-dom'
+import placeholderImage from '../../../assets/placeholder.jpg'
+import blogs from '../../../Utils/blogs'
+import {useState} from 'react'
+import {useEffect} from 'react'
+import {LazyLoadImage} from 'react-lazy-load-image-component'
+import {FiExternalLink} from 'react-icons/fi'
+import {SiLinkedin, SiInstagram} from 'react-icons/si'
 import {
   EmailShareButton,
   EmailIcon,
@@ -18,17 +18,17 @@ import {
   WhatsappShareButton,
   WhatsappIcon,
   LinkedinIcon,
-} from "react-share";
+} from 'react-share'
 
 const BlogDetail = () => {
-  const { blog_path } = useParams();
-  const [blog, setBlog] = useState({});
-  const url = window.location.href;
+  const {blog_path} = useParams()
+  const [blog, setBlog] = useState({})
+  const url = window.location.href
 
   useEffect(() => {
-    const current_blog = blogs.find((blog) => blog.path === blog_path);
-    setBlog(current_blog);
-  }, [blog_path]);
+    const current_blog = blogs.find(blog => blog.path === blog_path)
+    setBlog(current_blog)
+  }, [blog_path])
 
   return (
     <div className="mt-20">
@@ -51,7 +51,7 @@ const BlogDetail = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
         <div className="md:col-span-2 lg:col-span-3">
-          {blog?.description?.split("\n")?.map((s, i) => (
+          {blog?.description?.split('\n')?.map((s, i) => (
             <React.Fragment key={i + 1}>
               <p className="text-neutral text-justify">{s}</p>
               <br />
@@ -91,9 +91,7 @@ const BlogDetail = () => {
 
           <div className="w-full h-[1px] bg-neutral my-6"></div>
 
-          <h4 className="text-lg font-medium mb-3">
-            Share :{" "}
-          </h4>
+          <h4 className="text-lg font-medium mb-3">Share : </h4>
           <div className="flex items-center gap-4 flex-wrap">
             <EmailShareButton url={url} title="Gilbert Hutapea ">
               <EmailIcon size={32} round={true} />
@@ -116,7 +114,7 @@ const BlogDetail = () => {
 
           <h4 className="text-lg font-medium mb-3">Tags : </h4>
           <div>
-            {blog?.tags?.map((tag) => (
+            {blog?.tags?.map(tag => (
               <button
                 key={tag}
                 className="bg-gray-300 text-white bg-opacity-40 px-2 py-0 m-1 rounded"
@@ -128,7 +126,7 @@ const BlogDetail = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default BlogDetail;
+export default BlogDetail
