@@ -1,6 +1,6 @@
-import React from 'react'
-import Lottie from 'react-lottie'
-import readingBook from '../../../assets/reading-book.json'
+import React from "react";
+import Lottie from "react-lottie";
+import readingBook from "../../../assets/reading-book.json";
 
 const Education = () => {
   const defaultOptions = {
@@ -8,9 +8,9 @@ const Education = () => {
     autoplay: true,
     animationData: readingBook,
     rendererSettings: {
-      preserveAspectRatio: 'xMidYMid slice',
+      preserveAspectRatio: "xMidYMid slice",
     },
-  }
+  };
   return (
     <div className="pt-24">
       <div className="mb-12">
@@ -32,46 +32,45 @@ const Education = () => {
           <div className="p-6 bg-[#313131] bg-opacity-90 backdrop-blur-lg rounded-lg shadow-lg inline-block w-[300px] hover:shadow-primary duration-300 cursor-pointer">
             <div className="text-right mb-4">
               <h3 className="text-2xl font-semibold text-primary">
-                Diploma in CSE
+                MERN Full Stack
               </h3>
-              <p className="text-sm text-neutral font-semibold">2021 - 2025</p>
+              <p className="text-sm text-neutral font-semibold">
+                2024 Nov - 2025 Dec
+              </p>
             </div>
             <p className="text-sm text-neutral text-justify">
-              I am currently studying in Informatics Engineering (4th Semester)
-              at Sekolah Tinggi Teknologi Informatika Sony Sugema, Karawang,
-              Jawa Barat, Indonesia
+              I recently completed MERN FUll stack course and got IRC
+              certification
             </p>
           </div>
 
           {/* React Developer */}
           <div className="my-6 md:my-4 md:ml-[200px] p-6 bg-[#313131] bg-opacity-90 backdrop-blur-lg rounded-lg shadow-lg w-[300px] hover:shadow-primary duration-300 cursor-pointer">
             <div className="text-right mb-4">
-              <h3 className="text-2xl font-semibold text-primary">
-                React Developer
-              </h3>
-              <p className="text-sm text-neutral font-semibold">2023</p>
+              <h3 className="text-2xl font-semibold text-primary">B.Tech</h3>
+              <p className="text-sm text-neutral font-semibold">2015-2019</p>
             </div>
             <p className="text-sm text-neutral text-justify">
-              I have successfully completed the{' '}
-              <b>React Web Developer Expert</b> from Dicoding.
+              I have successfully completed the{" "}
+              <b>B.Tech in Chemical Engineering</b> from SVCE,Chennai.
             </p>
           </div>
 
           {/* SSC */}
           <div className="p-6 bg-[#313131] bg-opacity-90 backdrop-blur-lg rounded-lg shadow-lg w-[300px] hover:shadow-primary duration-300 cursor-pointer">
             <div className="text-right mb-4">
-              <h3 className="text-2xl font-semibold text-primary">SSC</h3>
-              <p className="text-sm text-neutral font-semibold">2018 - 2021</p>
+              <h3 className="text-2xl font-semibold text-primary">HSC</h3>
+              <p className="text-sm text-neutral font-semibold">2014</p>
             </div>
             <p className="text-sm text-neutral text-justify">
-              I have passed the Senior Secondary Certificate (SSC) with the
-              highest result <b>GPA - 88</b>
+              I have passed the Senior Secondary Certificate (HSC) with the
+              highest result <b>92 Percentage</b>
             </p>
           </div>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Education
+export default Education;

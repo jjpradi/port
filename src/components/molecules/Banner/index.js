@@ -1,13 +1,13 @@
-import React from 'react'
-import {Link} from 'react-router-dom'
-import {FaDownload} from 'react-icons/fa'
-import {RiFolderInfoFill} from 'react-icons/ri'
-import TypeAnimation from 'react-type-animation'
-import {motion} from 'framer-motion'
-import Lottie from 'react-lottie'
-import coding from '../../../assets/coding.json'
-import '../../../pages/shared/Shared.css'
-import {SecondaryBtn} from '../../../components'
+import React from "react";
+import { Link } from "react-router-dom";
+import { FaDownload } from "react-icons/fa";
+import { RiFolderInfoFill } from "react-icons/ri";
+import TypeAnimation from "react-type-animation";
+import { motion } from "framer-motion";
+import Lottie from "react-lottie";
+import coding from "../../../assets/coding.json";
+import "../../../pages/shared/Shared.css";
+import { SecondaryBtn } from "../../../components";
 
 const Banner = () => {
   const defaultOptions = {
@@ -15,15 +15,15 @@ const Banner = () => {
     autoplay: true,
     animationData: coding,
     rendererSettings: {
-      preserveAspectRatio: 'xMidYMid slice',
+      preserveAspectRatio: "xMidYMid slice",
     },
-  }
+  };
   return (
     <div className="parent min-h-[100vh] flex flex-col-reverse lg:flex-row items-center justify-between">
       <motion.div
-        initial={{x: '-100vw'}}
-        animate={{x: 0}}
-        transition={{duration: 1}}
+        initial={{ x: "-100vw" }}
+        animate={{ x: 0 }}
+        transition={{ duration: 1 }}
       >
         <h2 className="text-neutral text-xl font-medium translate-y-[-90%] sm:translate-y-[-0%]">
           Hello, I'm
@@ -36,21 +36,29 @@ const Banner = () => {
             className="text-2xl text-primary font-bold translate-y-[-80%] sm:translate-y-[-0%]"
             cursor={true}
             sequence={[
-              'A Mern-stack Developer',
+              "A Mern-stack Developer",
               2000,
-              'A Full-stack Developer',
+              "A Full-stack Developer",
               2000,
-              'A Front-end Developer',
+              "A Front-end Developer",
               2000,
             ]}
             wrapper="div"
             repeat={Infinity}
           />
         </div>
-        <p className="text-neutral max-w-xl mb-6 font-medium translate-y-[-20%] sm:translate-y-[-0%]">
-          I'm an aspiring MERN stack developer . I specialize in using HTML,
-          CSS, MySQL, React.js, JavaScript, MongoDB, Express.js, and Node.js to
-          create scalable and robust web applications.
+        <p className="text-neutral mt-2 max-w-xl mb-6 font-medium translate-y-[-20%] sm:translate-y-[-0%]">
+          I am an aspiring MERN stack developer passionate about building
+          high-quality, scalable web applications that meet user and business
+          needs. Through hands-on project experience during my learning program
+          at NxtWave, I have developed strong skills in React.js, JavaScript,
+          MongoDB, Express.js,HTML, CSS, Python, SQLite and Node.js. I focus on
+          creating efficient, robust, and user-friendly applications while
+          continuously improving my technical expertise.
+          <br className="mt-3" />I am committed to continuous learning and
+          staying updated with emerging technologies in web development. I
+          regularly explore new frameworks, tools, and best practices to improve
+          my skills and build modern, scalable applications.
           {/* I am a Front-end Developer. I am very passionate to my work and
           dedicated to explore New Tools And Technologies. */}
         </p>
@@ -79,14 +87,14 @@ const Banner = () => {
       </motion.div>
       <motion.div
         className="w-full md:w-1/2"
-        initial={{x: '100vw'}}
-        animate={{x: 0}}
-        transition={{duration: 1}}
+        initial={{ x: "100vw" }}
+        animate={{ x: 0 }}
+        transition={{ duration: 1 }}
       >
         <Lottie options={defaultOptions} height="90%" width="90%" />
       </motion.div>
     </div>
-  )
-}
+  );
+};
 
-export default Banner
+export default Banner;

@@ -12,6 +12,7 @@ import {
   FaTwitterSquare,
   FaInstagramSquare,
 } from "react-icons/fa";
+
 import { MdEmail, MdSend } from "react-icons/md";
 import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
@@ -39,10 +40,10 @@ const Contact = () => {
     e.preventDefault();
     emailjs
       .sendForm(
-        "service_6xnj05v",
+        "service_b4lutbu",
         "template_exk29f8",
         form.current,
-        "kLfLk-o6LKj-L9c77"
+        "3Kb5xvqJXNWrdUrcQ"
       )
       .then(
         (result) => {
@@ -126,7 +127,9 @@ const Contact = () => {
               className="primary-button"
             >
               <span>Send</span>
-              <span><MdSend /></span>
+              <span>
+                <MdSend />
+              </span>
             </button>
           </form>
         </motion.div>
@@ -139,49 +142,49 @@ const Contact = () => {
           <h2 className="text-2xl font-medium">Contact Info</h2>
           <div className="flex items-center my-6">
             <FaUserAlt className="text-2xl mr-8 hover:text-primary cursor-pointer duration-300"></FaUserAlt>
-            <h3 className="font-medium text-primary">Gilbert Hutapea</h3>
+            <h3 className="font-medium text-primary">John Pratheep</h3>
           </div>
           <div className="flex items-center my-6">
             <FaPhoneAlt className="text-2xl mr-8 hover:text-primary cursor-pointer duration-300"></FaPhoneAlt>
-            <h3 className="font-medium text-primary">+62 823 6148 4992</h3>
+            <h3 className="font-medium text-primary">8220524850</h3>
           </div>
           <div className="flex items-center my-6">
             <MdEmail className="text-3xl mr-8 hover:text-primary cursor-pointer duration-300"></MdEmail>
-            <h3 className="font-medium text-primary">berthutapea@gmail.com</h3>
+            <h3 className="font-medium text-primary">
+              pratheepjohn5@gmail.com
+            </h3>
           </div>
           <div className="flex items-center my-6">
             <FaLocationArrow className="text-2xl mr-8 hover:text-primary cursor-pointer duration-300"></FaLocationArrow>
 
-            <h3 className="font-medium text-primary">
-              Karawang, Jawa Barat, Indonesia
-            </h3>
+            <h3 className="font-medium text-primary">Nagercoil,TamilNadu</h3>
           </div>
           <div className="mt-8 flex items-center">
             <h3 className="text-xl text-neutral">Social</h3>
             <div className="bg-gray-400 w-10 h-[2px] mx-4"></div>
             <a
-              href="https://linkedin.com/in/gilberthutapea"
+              href="https://linkedin.com/in/jjpeadip37"
               target="blank"
               className="text-3xl text-neutral hover:text-primary hover:-translate-y-1.5 shadow-lg mx-1 duration-300"
             >
               <FaLinkedin></FaLinkedin>
             </a>
             <a
-              href="https://www.github.com/berthutapea"
+              href="https://www.github.com/jjpradi"
               target="blank"
               className="text-3xl text-neutral hover:text-primary hover:-translate-y-1.5 shadow-lg mx-1 duration-300"
             >
               <FaGithubSquare></FaGithubSquare>
             </a>
             <a
-              href="https://twitter.com/GilbertHutapeaa"
+              href="https://twitter.com/"
               target="blank"
               className="text-3xl text-neutral hover:text-primary hover:-translate-y-1.5 shadow-lg mx-1 duration-300"
             >
               <FaTwitterSquare></FaTwitterSquare>
             </a>
             <a
-              href="https://www.instagram.com/bethup97/"
+              href="https://www.instagram.com/jjpradip37"
               target="blank"
               className="text-3xl text-neutral hover:text-primary hover:-translate-y-1.5 shadow-lg mx-1 duration-300"
             >
