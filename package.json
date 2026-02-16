@@ -32,6 +32,12 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+
+
+
+   "npmConfig": {
+    "legacy-peer-deps": true
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
