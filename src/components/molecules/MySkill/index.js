@@ -11,13 +11,11 @@ import {
 
 import {
   SiJavascript,
-  SiTailwindcss,
   SiExpress,
   SiMongodb,
   SiSqlite,
   SiPython,
   SiAdobephotoshop,
-  SiFirebase,
 } from "react-icons/si";
 import man from "../../../assets/man.json";
 
