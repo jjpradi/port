@@ -93,14 +93,14 @@ const Items = [
   {
     id: 3,
     mainImage:
-      "https://res.cloudinary.com/du541igfh/image/upload/v1684312778/Blog%20Portfolio%20Gilbert/Project/mern-movie/img-1_lcun2a.png",
+      "https://i.ibb.co/WWQr6BDc/Screenshot-2026-02-20-190823.png",
     img: [
-      "https://res.cloudinary.com/du541igfh/image/upload/v1684312778/Blog%20Portfolio%20Gilbert/Project/mern-movie/img-1_lcun2a.png",
-      "https://res.cloudinary.com/du541igfh/image/upload/v1684312777/Blog%20Portfolio%20Gilbert/Project/mern-movie/img-2_ar1fex.png",
-      "https://res.cloudinary.com/du541igfh/image/upload/v1684312780/Blog%20Portfolio%20Gilbert/Project/mern-movie/img-3_qpebgb.png",
-      "https://res.cloudinary.com/du541igfh/image/upload/v1684312777/Blog%20Portfolio%20Gilbert/Project/mern-movie/img-4_yadwtg.png",
-      "https://res.cloudinary.com/du541igfh/image/upload/v1684312780/Blog%20Portfolio%20Gilbert/Project/mern-movie/img-5_xvx0vj.png",
-      "https://res.cloudinary.com/du541igfh/image/upload/v1684312773/Blog%20Portfolio%20Gilbert/Project/mern-movie/img-6_aaq4yf.png",
+      "https://i.ibb.co/twjYbNbk/Screenshot-2026-02-20-190606.png",
+      "https://i.ibb.co/QFZmWqDk/Screenshot-2026-02-20-190643.png",
+      "https://i.ibb.co/6JgHrm3B/Screenshot-2026-02-20-190700.png",
+      "https://i.ibb.co/WWQr6BDc/Screenshot-2026-02-20-190823.png",
+      "https://i.ibb.co/QZ7fWkR/Screenshot-2026-02-20-190742.png",
+      "https://i.ibb.co/FL5PjmMj/Screenshot-2026-02-20-190950.png",
       "https://res.cloudinary.com/du541igfh/image/upload/v1684312772/Blog%20Portfolio%20Gilbert/Project/mern-movie/img-7_twij3j.png",
       "https://res.cloudinary.com/du541igfh/image/upload/v1684312773/Blog%20Portfolio%20Gilbert/Project/mern-movie/img-8_njclct.png",
       "https://res.cloudinary.com/du541igfh/image/upload/v1684312774/Blog%20Portfolio%20Gilbert/Project/mern-movie/img-9_zg1jfe.png",
@@ -145,11 +145,11 @@ const Items = [
       "MongoDB",
       "TMDB API",
     ],
-    title: "BertFlix",
+    title: "MovieDB",
     description:
       "Fullstack open source movie application made with MongoDB, Express, React & Nodejs (MERN)",
     category: "personal",
-    liveLink: "https://bertflix.vercel.app/",
+    liveLink: "https://movie-databse-ivaq.vercel.app/",
     codeLink: "https://github.com/jjpradi/movieDB",
   },
   {
