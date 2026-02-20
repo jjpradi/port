@@ -109,7 +109,7 @@ const About = () => {
               </h2>
               <div className="about-cont">
                 <a
-                  href="https://drive.google.com/file/d/1A_QF4nc6LovLcvNP_FHMHG_CRI9tTDLQ/view?usp=drive_link"
+                  href="https://drive.google.com/file/d/1iYaiJZQFdRxLOrlD1TgYKkYvdCPjSWL8/view?usp=drive_link"
                   target="blank"
                 >
                   <div className="flex justify-center md:justify-start translate-y-[60%] sm:translate-y-[-0%]">
@@ -138,9 +138,7 @@ const About = () => {
               </div>
             </div>
           </motion.div>
-          
         </div>
-
       </div>
 
       {/* My Skill */}
