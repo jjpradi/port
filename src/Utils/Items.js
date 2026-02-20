@@ -38,13 +38,13 @@ const Items = [
   },
   {
     id: 2,
-    mainImage: "https://i.ibb.co/qY0YbzQ1/Screenshot-2026-02-19-211442.png",
+    mainImage: "https://i.ibb.co/zKDyS3k/Screenshot-2026-02-19-211503.png",
     img: [
       "https://i.ibb.co/qY0YbzQ1/Screenshot-2026-02-19-211442.png",
-      "https://res.cloudinary.com/du541igfh/image/upload/v1682701463/Blog%20Portfolio%20Gilbert/Project/mern-blog/img-2_ptr4lg.png",
-      "https://res.cloudinary.com/du541igfh/image/upload/v1682701467/Blog%20Portfolio%20Gilbert/Project/mern-blog/img-3_gjle1m.png",
-      "https://res.cloudinary.com/du541igfh/image/upload/v1682701479/Blog%20Portfolio%20Gilbert/Project/mern-blog/img-4_kmaye9.png",
-      "https://res.cloudinary.com/du541igfh/image/upload/v1682701489/Blog%20Portfolio%20Gilbert/Project/mern-blog/img-5_nuhniv.png",
+      "https://i.ibb.co/zKDyS3k/Screenshot-2026-02-19-211503.png",
+      "https://i.ibb.co/whqPMZcZ/Screenshot-2026-02-19-211405.png",
+      "https://i.ibb.co/WW8wZPzG/Screenshot-2026-02-19-211416.png",
+      "https://i.ibb.co/hJmCGyyG/Screenshot-2026-02-19-211306.png",
       "https://res.cloudinary.com/du541igfh/image/upload/v1682701492/Blog%20Portfolio%20Gilbert/Project/mern-blog/img-6_rkvmhd.png",
       "https://res.cloudinary.com/du541igfh/image/upload/v1682701496/Blog%20Portfolio%20Gilbert/Project/mern-blog/img-7_xjm4pm.png",
       "https://res.cloudinary.com/du541igfh/image/upload/v1682701499/Blog%20Portfolio%20Gilbert/Project/mern-blog/img-8_dj0qoq.png",
@@ -88,8 +88,8 @@ const Items = [
     description:
       "Fullstack open source blogging application made with MongoDB, Express, React & Nodejs (MERN)",
     category: "personal",
-    liveLink: "https://berthutapea.vercel.app/mern-blog",
-    codeLink: "https://github.com/",
+    liveLink: "https://jjbook.vercel.app/",
+    codeLink: "https://github.com/jjpradi/jjbook",
   },
   {
     id: 3,
