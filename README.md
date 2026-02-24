@@ -64,7 +64,7 @@ This project was created using the following technologies.
 ![img-5](https://i.ibb.co/xSCtNqgV/Screenshot-2026-02-24-180757.png)
 
 ## Author
-- Portfolio: [berthutapea](https://port-one-olive.vercel.app//)
+- Portfolio: [john](https://port-one-olive.vercel.app//)
 - Github: [john](https://github.com/jjpradi)
 
 - Linkedin: [john](https://www.linkedin.com/in/jjpradip37/)
