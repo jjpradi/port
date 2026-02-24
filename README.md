@@ -1,4 +1,4 @@
-<h1 align ="center" >Gilbert Hutapea | Portfolio</h1>
+<h1 align ="center" >John Pratheep | Portfolio</h1>
 
 <h5  align ="center"> 
 Dedicated Front-end developer. Capable to solve working problems. Passionate about learning & development to reach the target. Eager to tackle more complex problems and continue to find ways to maximize user efficiency. My next mission is how to become a Mern stack Developer. I would love to build some Giant Website which will shine myself. <br/> <a href="https://drive.google.com/file/d/16r18tc8RhGEiQoOGTTFvgZ0g46C_oQFe/view?usp=share_link">Resume 💼</a> </h5>
@@ -55,26 +55,26 @@ This project was created using the following technologies.
  
 ![img-1](https://github.com/berthutapea/berthutapea-portfolio/assets/111676859/825edab2-ff3b-4c24-8a99-7bc2527bb758)
 ---- -
-![img-2](https://github.com/berthutapea/berthutapea-portfolio/assets/111676859/b5ed935c-cc42-4d23-a2c7-765e90f198f1)
+![img-2](https://i.ibb.co/TDWSqJmT/Screenshot-2026-02-24-180814.png)
 --- - 
 ![img-3](https://user-images.githubusercontent.com/111676859/235824165-95c1e6b6-f3df-426e-816a-8c80a91d352d.png)
 --- - 
-![img-4](https://user-images.githubusercontent.com/111676859/235824167-224063d0-624a-4aaf-b27f-f4aa8b668511.png)
+![img-4](https://i.ibb.co/JRzYcSX5/Screenshot-2026-02-24-180825.png)
 --- - 
-![img-5](https://user-images.githubusercontent.com/111676859/235824168-a1028607-de4c-466a-8527-c05eedb1d6b0.png)
+![img-5](https://i.ibb.co/xSCtNqgV/Screenshot-2026-02-24-180757.png)
 
 ## Author
-- Portfolio: [berthutapea](https://berthutapea.vercel.app/)
-- Github: [berthutapea](https://github.com/berthutapea)
-- Sponsor: [berthutapea](https://saweria.co/berthutapea)
-- Linkedin: [gilberthutapea](https://www.linkedin.com/in/gilberthutapea/)
-- Email: [berthutapea@gmail.com](mailto:berthutapea@gmail.com)
+- Portfolio: [berthutapea](https://port-one-olive.vercel.app//)
+- Github: [john](https://github.com/jjpradi)
+
+- Linkedin: [john](https://www.linkedin.com/in/jjpradip37/)
+- Email: [pratheepjohn5@gmail.com](mailto:pratheepjohn5@gmail.com)
 
 ## License
 
 MIT License
 
-Copyright (c) 2022 Gilbert Hutapea
+Copyright (c) 2026 John Pratheep
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
