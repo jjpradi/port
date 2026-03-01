@@ -22,7 +22,7 @@ In order to run this project locally, simply fork and clone the repository or do
 In the first terminal
 
 ```
-$ cd berthutapea-portfolio
+$ cd john-portfolio
 $ npm install 
 $ npm run start
 ```
