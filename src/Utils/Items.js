@@ -279,6 +279,51 @@ const Items = [
     codeLink: "https://github.com/jjtrendz",
   },
 
+{
+    id: 8,
+    mainImage: "https://i.ibb.co/Y4KHL6Jp/Screenshot-2026-04-18-173023.png",
+    img: [
+      "https://i.ibb.co/bjwFxT3d/Screenshot-2026-02-17-011841.png",
+      "https://i.ibb.co/HLMMR9jf/Screenshot-2026-02-17-011904.png",
+      "https://i.ibb.co/v6Y1bHS8/Screenshot-2026-02-17-011925.png",
+      "https://i.ibb.co/gbb3y2m3/Screenshot-2026-02-17-011941.png",
+      "https://i.ibb.co/Wp3qzwrv/Screenshot-2026-02-17-012111.png",
+      "https://i.ibb.co/ccndgKwx/Screenshot-2026-02-17-010429.png",
+      "https://res.cloudinary.com/du541igfh/image/upload/v1682772432/Blog%20Portfolio%20Gilbert/Project/mern-penggajian-karyawan/img-18_zpsewd.png",
+    ],
+    features: [
+      "Login ",
+      "Home",
+      "Prime section",
+      "Products",
+      "Add Cart",
+      "Edit Product",
+      "Remove Product",
+      "404 Page and many more",
+      "Responsive Design",
+    ],
+    technologies: [
+      "React",
+      "React Hooks",
+      "React Icons",
+
+      "Tailwind CSS",
+      "LocalStorage",
+
+      "Node JS",
+      "Express JS",
+
+      "JWT",
+
+      "Cookie Parser",
+    ],
+    title: "AI powered TODO System",
+    description: "NxtTrendz App is e-commerce similar to Amazon and Flipkart.",
+    category: "business",
+    liveLink: "https://simple-three-theta.vercel.app//",
+    codeLink: "https://github.com/jjtrendz",
+  },
+
 
 ];
 
